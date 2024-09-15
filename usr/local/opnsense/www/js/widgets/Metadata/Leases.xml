@@ -6,15 +6,15 @@
         </endpoints>
         <translations>
             <title>DHCPv4 Leases</title>
-			<servicedisabled>DHCPv4 service is not running</servicedisabled>
+            <servicedisabled>DHCPv4 service is not running</servicedisabled>
             <enabled>Online</enabled>
             <disabled>Offline</disabled>
             <ip>IP</ip>
             <mac>MAC</mac>
             <hostname>Hostname</hostname>
-			<type>Type</type>
+            <type>Type</type>
             <undefined>N/A</undefined>
-			<nolease>No leases</nolease>
+            <nolease>No leases</nolease>
         </translations>
     </leases>
 </metadata>

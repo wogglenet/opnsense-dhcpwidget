@@ -28,7 +28,7 @@
 export default class Leases extends BaseTableWidget {
     constructor() {
         super();
-		this.tickTimeout = 10;
+        this.tickTimeout = 10;
     }
 
     getGridOptions() {
@@ -69,7 +69,7 @@ export default class Leases extends BaseTableWidget {
         }
 
         this.processLeases(leaseData.rows);
-		
+        
        
     }
 
@@ -96,13 +96,13 @@ export default class Leases extends BaseTableWidget {
             let tooltipText = lease.status === "online" ? this.translations.enabled : this.translations.disabled;
 
             let currentIp = lease.address || this.translations.undefined;
-			let currentMac = lease.mac || this.translations.undefined;
-			let currentHostname = lease.hostname || this.translations.undefined;
+            let currentMac = lease.mac || this.translations.undefined;
+            let currentHostname = lease.hostname || this.translations.undefined;
 
             let row = [
                 `
                     <div class="leases-ip" style="white-space: nowrap;">
-					<i class="fa fa-circle ${colorClass} dhcp-tooltip" style="cursor: pointer;" title="${tooltipText}"></i>&nbsp;<a href="/ui/dhcpv4/leases/" target="_blank">${lease.address}</a>
+                    <i class="fa fa-circle ${colorClass} dhcp-tooltip" style="cursor: pointer;" title="${tooltipText}"></i>&nbsp;<a href="/ui/dhcpv4/leases/" target="_blank">${lease.address}</a>
                     </div>`,
                     `<div class="leases-host">${currentHostname}</div>`,
                     `<div class="leases-mac"><small>${currentMac}</small></div>`
