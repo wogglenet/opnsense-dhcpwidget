@@ -102,7 +102,7 @@ export default class Leases extends BaseTableWidget {
             let row = [
                 `
                     <div class="leases-ip" style="white-space: nowrap;">
-                    <i class="fa fa-circle ${colorClass} dhcp-tooltip" style="cursor: pointer;" title="${tooltipText}"></i>&nbsp;<a href="/ui/dhcpv4/leases/" target="_blank">${lease.address}</a>
+                    <a href="/ui/dhcpv4/leases" target="_blank"><i class="fa fa-circle ${colorClass} dhcp-tooltip" style="cursor: pointer;" title="${tooltipText}"></i></a>&nbsp;${lease.address}
                     </div>`,
                     `<div class="leases-host">${currentHostname}</div>`,
                     `<div class="leases-mac"><small>${currentMac}</small></div>`
